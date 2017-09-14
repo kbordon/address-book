@@ -9,25 +9,36 @@
   </head>
   <body>
 
-    <div class="container">
-      <h1>Address Book</h1>
-      <form id="formContact">
-        <div class="form-group">
-          <label for="contactName">Full name:</label>
-          <input id="contactName" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="contactAddress">Address:</label>
-          <input id="contactAddress" class="form-control" type="text">
-        </div>
+    <div class="container book">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="well">
+            <h1>Address Book</h1>
+            <form id="formContact">
+              <div class="form-group">
+                <label for="contactName">Full name:</label>
+                <input id="contactName" class="form-control" type="text" placeholder="Jane Doe">
+                <label for="contactAddress">Address:</label>
+                <input id="contactAddress" class="form-control" type="text" placeholder="123 ABC St Somewhere Outthere AZ 45678">
+                <label for="contactPhone">Phone:</label>
+                <input id="contactPhone" class="form-control" type="tel" placeholder="555-555-5555">
+                <label for="contactEmail">Email:</label>
+                <input id="contactEmail" class="form-control" type="email" placeholder="Jane@email.com">
+                <label for="contactEmail">Date of Birth:</label>
+                <input id="contactDob" class="form-control" type="date">
+              </div>
 
-        <button type="submit" class="btn">Submit Contact</button>
-      </form>
-      <h2>Your Contacts:</h2>
-      <ul class="unstyled">
-      </ul>
+              <button type="submit" class="btn">Submit Contact</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6 contactDisplay">
+          <ul id="contact" class="list-unstyled">
+          </ul>
+        </div>
+      </div>
+
+
     </div>
-
-
   </body>
 </html>

@@ -1,3 +1,15 @@
+.book {
+  width: 70%;
+}
+
+.well {
+  background-color: orange;
+}
+
 .hiddenAddress {
+  display: none;
+}
+
+li:empty{
   display: none;
 }
